@@ -3,7 +3,7 @@ import pandas as pd
 import streamlit as st
 from Tspm import SimplePatentMap
 
-st.subheader('SimplePatentMap')
+st.subheader('Simple Patent Map')
 
 with st.sidebar:
     st.markdown("[データセット](https://github.com/SimplePatentMap/dataset)")
@@ -27,7 +27,7 @@ if len(df) > 1:
     st.download_button(
         "ダウンロード",
         buf.getvalue(),
-        "simplepatentmap.xlsx",
+        "SimplePatentMap.xlsx",
     )
 
 
